@@ -1,8 +1,47 @@
 import { bangs } from "./bang"
 
+async function switchTheme() {
+    const theme = await cookieStore.get("theme")
+
+    // Default theme is light, so set to dark if unset
+    if (theme?.value === "light") {
+        console.log("Switching to dark theme")
+        cookieStore.set("theme", "dark")
+    } else {
+        console.log("Switching to light theme")
+        cookieStore.set("theme", "light")
+    }
+
+    checkTheme()
+}
+
+async function checkTheme() {
+    const theme = await cookieStore.get("theme")
+
+    if (theme) {
+        if (theme.value === "light") {
+            document.body.classList.add("light-theme")
+        }
+        if (theme.value === "dark") {
+            document.body.classList.remove("light-theme")
+        }
+
+        const unsetThemeButton = document.querySelector<HTMLButtonElement>(
+            ".unset-theme-button"
+        )!
+        unsetThemeButton.classList.remove("hide")
+    } else if (new URL(window.location.href).searchParams.has("light")) {
+        document.body.classList.add("light-theme")
+    } else {
+        document.body.classList.remove("light-theme")
+    }
+}
+
 function noSearchDefaultPageRender() {
     const app = document.querySelector<HTMLDivElement>("#app")!
-    app.classList.remove("cloak");
+    app.classList.remove("cloak")
+
+    void checkTheme()
 
     const copyButton = app.querySelector<HTMLButtonElement>(".copy-button")!
     const copyIcon = copyButton.querySelector("img")!
@@ -15,6 +54,19 @@ function noSearchDefaultPageRender() {
         setTimeout(() => {
             copyIcon.src = "/clipboard.svg"
         }, 2000)
+    })
+
+    const themeButton = app.querySelector<HTMLButtonElement>(".theme-button")!
+    themeButton.addEventListener("click", switchTheme)
+
+    const unsetThemeButton = app.querySelector<HTMLButtonElement>(
+        ".unset-theme-button"
+    )!
+    unsetThemeButton.addEventListener("click", async () => {
+        console.log("Unsetting theme")
+        await cookieStore.delete("theme")
+        unsetThemeButton.classList.add("hide")
+        checkTheme()
     })
 }
 
