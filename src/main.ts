@@ -5,10 +5,8 @@ async function switchTheme() {
 
     // Default theme is light, so set to dark if unset
     if (theme?.value === "light") {
-        console.log("Switching to dark theme")
         cookieStore.set("theme", "dark")
     } else {
-        console.log("Switching to light theme")
         cookieStore.set("theme", "light")
     }
 
@@ -63,7 +61,6 @@ function noSearchDefaultPageRender() {
         ".unset-theme-button"
     )!
     unsetThemeButton.addEventListener("click", async () => {
-        console.log("Unsetting theme")
         await cookieStore.delete("theme")
         unsetThemeButton.classList.add("hide")
         checkTheme()
