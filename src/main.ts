@@ -3,7 +3,7 @@ import "./global.css"
 
 function noSearchDefaultPageRender() {
     const app = document.querySelector<HTMLDivElement>("#app")!
-    // app.classList.remove("cloak");
+    app.classList.remove("cloak");
 
     const copyButton = app.querySelector<HTMLButtonElement>(".copy-button")!
     const copyIcon = copyButton.querySelector("img")!
