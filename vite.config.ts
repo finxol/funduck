@@ -7,6 +7,10 @@ export default defineConfig({
         VitePWA({
             registerType: "autoUpdate"
         }),
-        viteSingleFile()
+        viteSingleFile({
+            removeViteModuleLoader: false,
+            useRecommendedBuildConfig: true,
+            inlinePattern: ["**/*.css"]
+        })
     ]
 })
