@@ -1,0 +1,58 @@
+name: Sync bang.js
+
+on:
+    schedule:
+        # Runs every day at midnight
+        - cron: "15 0 */3 * *"
+    workflow_dispatch:
+
+jobs:
+    sync-and-pr:
+        runs-on: ubuntu-latest
+        permissions:
+            contents: write
+            pull-requests: write
+        steps:
+            - name: Checkout repository
+              uses: actions/checkout@v4
+
+            - name: Set up Node.js and Yarn
+              uses: actions/setup-node@v4
+              with:
+                  node-version: "24"
+                  cache: "pnpm"
+
+            - name: Install dependencies
+              run: pnpm install
+
+            - name: Fetch latest bang.js
+              uses: wei/wget@v1
+              with:
+                  args: -O src/data/bang.json https://duckduckgo.com/bang.js
+
+            - name: Format file
+              run: pnpm biome format --write src/data/bang.json
+
+            - name: Check for changes
+              id: changes
+              run: |
+                  if [[ -n $(git status --porcelain) ]]; then
+                    echo "has_changes=true" >> $GITHUB_OUTPUT
+                  else
+                    echo "has_changes=false" >> $GITHUB_OUTPUT
+                  fi
+
+            - name: Create Pull Request if changes exist
+              if: steps.changes.outputs.has_changes == 'true'
+              uses: peter-evans/create-pull-request@v6
+              with:
+                  token: ${{ secrets.GITHUB_TOKEN }}
+                  commit-message: "chore: update bang.js from upstream"
+                  title: "chore: update bang.js from upstream"
+                  body: "This PR was automatically created after detecting changes in the upstream `bang.js` file."
+                  branch: "chore/sync-bangs"
+                  delete-branch: true
+                  # Assignee and labels
+                  assignees: finxol
+                  reviewers: finxol
+                  labels: bangs
