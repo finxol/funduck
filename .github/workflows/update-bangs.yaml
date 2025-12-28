@@ -31,6 +31,9 @@ jobs:
             - name: Format file
               run: biome format --write src/data/bang.json
 
+            - name: Linting
+              run: biome check
+
             - name: Check for changes
               id: changes
               run: |
