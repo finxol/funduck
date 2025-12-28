@@ -43,6 +43,7 @@ jobs:
               uses: peter-evans/create-pull-request@v6
               with:
                   token: ${{ secrets.GITHUB_TOKEN }}
+                  persist-credentials: false
                   commit-message: "chore: update bang.js from upstream"
                   title: "chore: update bang.js from upstream"
                   body: "This PR was automatically created after detecting changes in the upstream `bang.js` file."
