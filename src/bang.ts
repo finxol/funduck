@@ -10,7 +10,7 @@ export const additionalBangs: Bang[] = [
         s: "T3 Chat",
         sc: "AI",
         t: "t3",
-        u: "https://t3.chat/new?model=gemini-3-flash&q=%s"
+        u: "https://t3.chat/new?model=gemini-3-flash&q={{{s}}}"
     },
     {
         c: "Online Services",
