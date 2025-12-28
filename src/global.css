@@ -193,6 +193,38 @@ textarea {
     padding: 0 8px;
 }
 
+form {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+
+    input {
+        padding: 8px 12px;
+        border: 1px solid var(--input-border);
+        border-radius: 4px;
+        width: 100%;
+        background: oklch(from var(--text-color) l c h / 0.9);
+        color: var(--bg-color);
+        outline: none;
+    }
+
+    button {
+        display: grid;
+        place-items: center;
+        padding: 0.2rem 0.4rem;
+        background-color: var(--text-color);
+
+        svg {
+            inline-size: 2rem;
+            aspect-ratio: 1;
+            height: auto;
+            color: var(--bg-color);
+            border-radius: 4px;
+            transition: all 0.2s;
+        }
+    }
+}
+
 /* Update url-input width to be 100% since container will control max width */
 .url-input {
     padding: 8px 12px;
