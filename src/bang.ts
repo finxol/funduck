@@ -5,12 +5,12 @@ type Bang = (typeof defaultBangs)[0]
 export const additionalBangs: Bang[] = [
     {
         c: "AI",
-        d: "www.t3.chat",
+        d: "t3.chat",
         r: 0,
         s: "T3 Chat",
         sc: "AI",
         t: "t3",
-        u: "https://www.t3.chat/new?q={{{s}}}"
+        u: "https://t3.chat/new?model=gemini-3-flash&q=%s"
     },
     {
         c: "Online Services",
@@ -19,7 +19,7 @@ export const additionalBangs: Bang[] = [
         s: "Kagi Search",
         sc: "Search",
         t: "kg",
-        u: "https://www.t3.chat/new?q={{{s}}}"
+        u: "https://kagi.com/search?q={{{s}}}"
     }
 ]
 
