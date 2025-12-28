@@ -30,21 +30,13 @@
             </svg>
         </div>
         <div id="app" class="cloak">
-            <div
-                style="
-                    display: flex;
-                    flex-direction: column;
-                    align-items: center;
-                    justify-content: center;
-                    height: 100svh;
-                "
-            >
-                <div class="content-container">
+            <main class="main-layout">
+                <div></div>
+                <header class="header">
                     <h1>fund*ck</h1>
                     <p>
-                        DuckDuckGo's bang redirects are too slow. Add the
-                        following URL as a custom search engine to your browser.
-                        Enables
+                        DuckDuckGo's bang redirects are too slow. funduck
+                        enables
                         <a
                             href="https://duckduckgo.com/bang.html"
                             target="_blank"
@@ -52,102 +44,119 @@
                             all of DuckDuckGo's bangs</a
                         >, plus a few extra ones.
                     </p>
-
-                    <form action="https://s.finxol.link" method="get">
-                        <input
-                            name="q"
-                            type="text"
-                            placeholder="Search anything using !bangs"
-                            tabindex="0"
-                        />
-                        <button type="submit">
-                            <svg
-                                xmlns="http://www.w3.org/2000/svg"
-                                width="56"
-                                height="56"
-                                viewBox="0 0 24 24"
-                                fill="none"
-                                stroke="currentColor"
-                                stroke-width="2"
-                                stroke-linecap="round"
-                                stroke-linejoin="round"
-                                class="lucide lucide-search-icon lucide-search"
-                            >
-                                <path d="m21 21-4.34-4.34" />
-                                <circle cx="11" cy="11" r="8" />
-                            </svg>
-                        </button>
-                    </form>
-
-                    <div class="url-container">
-                        <input
-                            type="text"
-                            class="url-input"
-                            value="https://s.finxol.link?q=%s"
-                            readonly
-                            tabindex="-1"
-                        />
-                        <button class="copy-button">
-                            <img src="/clipboard.svg" alt="Copy" />
-                        </button>
-                    </div>
-
-                    <section class="theme-control">
-                        <button class="theme-button">
-                            Switch theme
-
-                            <svg
-                                xmlns="http://www.w3.org/2000/svg"
-                                width="24"
-                                height="24"
-                                viewBox="0 0 24 24"
-                                fill="none"
-                                stroke="currentColor"
-                                stroke-width="2"
-                                stroke-linecap="round"
-                                stroke-linejoin="round"
-                                class="lucide lucide-sun-icon lucide-sun"
-                            >
-                                <circle cx="12" cy="12" r="4" />
-                                <path d="M12 2v2" />
-                                <path d="M12 20v2" />
-                                <path d="m4.93 4.93 1.41 1.41" />
-                                <path d="m17.66 17.66 1.41 1.41" />
-                                <path d="M2 12h2" />
-                                <path d="M20 12h2" />
-                                <path d="m6.34 17.66-1.41 1.41" />
-                                <path d="m19.07 4.93-1.41 1.41" />
-                            </svg>
-                            <svg
-                                xmlns="http://www.w3.org/2000/svg"
-                                width="24"
-                                height="24"
-                                viewBox="0 0 24 24"
-                                fill="none"
-                                stroke="currentColor"
-                                stroke-width="2"
-                                stroke-linecap="round"
-                                stroke-linejoin="round"
-                                class="lucide lucide-moon-icon lucide-moon"
-                            >
-                                <path
-                                    d="M20.985 12.486a9 9 0 1 1-9.473-9.472c.405-.022.617.46.402.803a6 6 0 0 0 8.268 8.268c.344-.215.825-.004.803.401"
-                                />
-                            </svg>
-                        </button>
-                        <button class="unset-theme-button hide">unset</button>
+                    <section class="search-section">
+                        <form action="https://s.finxol.link" method="GET">
+                            <input
+                                name="q"
+                                type="text"
+                                placeholder="Search anything using !bangs"
+                                tabindex="0"
+                            />
+                            <button type="submit">
+                                <svg
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    width="56"
+                                    height="56"
+                                    viewBox="0 0 24 24"
+                                    fill="none"
+                                    stroke="currentColor"
+                                    stroke-width="2"
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                    class="lucide lucide-search-icon lucide-search"
+                                >
+                                    <path d="m21 21-4.34-4.34" />
+                                    <circle cx="11" cy="11" r="8" />
+                                </svg>
+                            </button>
+                        </form>
                     </section>
+                </header>
+
+                <div>
+                    <section class="bottom-section">
+                        <span>
+                            Add this URL as a custom search engine to your
+                            browser.
+                        </span>
+
+                        <div class="url-container">
+                            <input
+                                type="text"
+                                class="url-input"
+                                value="https://s.finxol.link?q=%s"
+                                readonly
+                                tabindex="-1"
+                            />
+                            <button class="copy-button">
+                                <img src="/clipboard.svg" alt="Copy" />
+                            </button>
+                        </div>
+                    </section>
+
+                    <footer>
+                        <section class="theme-control">
+                            <button class="theme-button">
+                                <svg
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    width="24"
+                                    height="24"
+                                    viewBox="0 0 24 24"
+                                    fill="none"
+                                    stroke="currentColor"
+                                    stroke-width="2"
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                    class="lucide lucide-sun-icon lucide-sun"
+                                >
+                                    <circle cx="12" cy="12" r="4" />
+                                    <path d="M12 2v2" />
+                                    <path d="M12 20v2" />
+                                    <path d="m4.93 4.93 1.41 1.41" />
+                                    <path d="m17.66 17.66 1.41 1.41" />
+                                    <path d="M2 12h2" />
+                                    <path d="M20 12h2" />
+                                    <path d="m6.34 17.66-1.41 1.41" />
+                                    <path d="m19.07 4.93-1.41 1.41" />
+                                </svg>
+                                <svg
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    width="24"
+                                    height="24"
+                                    viewBox="0 0 24 24"
+                                    fill="none"
+                                    stroke="currentColor"
+                                    stroke-width="2"
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                    class="lucide lucide-moon-icon lucide-moon"
+                                >
+                                    <path
+                                        d="M20.985 12.486a9 9 0 1 1-9.473-9.472c.405-.022.617.46.402.803a6 6 0 0 0 8.268 8.268c.344-.215.825-.004.803.401"
+                                    />
+                                </svg>
+                            </button>
+                            <button class="unset-theme-button hide">
+                                unset
+                            </button>
+                        </section>
+                        <section>
+                            <a href="https://finxol.io" target="_blank"
+                                >finxol</a
+                            >
+                            •
+                            <a href="https://t3.gg" target="_blank">theo</a>
+                            •
+                            <a
+                                href="https://github.com/finxol/funduck"
+                                target="_blank"
+                            >
+                                github
+                            </a>
+                        </section>
+                    </footer>
                 </div>
-                <footer class="footer">
-                    <a href="https://finxol.io" target="_blank">finxol</a>
-                    •
-                    <a href="https://t3.gg" target="_blank">theo</a>
-                    •
-                    <a href="https://github.com/finxol/funduck" target="_blank">
-                        github
-                    </a>
-                </footer>
-            </div>
+            </main>
         </div>
         <script type="module" src="/src/main.ts"></script>
     </body>
