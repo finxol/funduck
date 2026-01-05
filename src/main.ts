@@ -78,10 +78,21 @@ function getBangredirectUrl() {
         return null
     }
 
+    const kagiToken = url.searchParams.get("kagi_token")?.trim() ?? ""
+
     const match = query.match(/!(\S+)/i)
 
     const bangCandidate = match?.[1]?.toLowerCase()
-    const selectedBang = bangs.find((b) => b.t === bangCandidate) ?? defaultBang
+    const resolvedBangCandidate = bangs.find((b) => b.t === bangCandidate)
+
+    const selectedBang =
+        (() => {
+            if (!resolvedBangCandidate && kagiToken) {
+                return bangs.find((b) => b.t === "kg")
+            } else {
+                return resolvedBangCandidate
+            }
+        })() ?? defaultBang
 
     // Remove the first bang from the query
     const cleanQuery = query.replace(/!\S+\s*/i, "").trim()
@@ -92,12 +103,18 @@ function getBangredirectUrl() {
 
     // Format of the url is:
     // https://www.google.com/search?q={{{s}}}
-    const searchUrl = selectedBang?.u.replace(
+    let searchUrl = selectedBang?.u.replace(
         "{{{s}}}",
         // Replace %2F with / to fix formats like "!ghr+t3dotgg/unduck"
         encodeURIComponent(cleanQuery).replace(/%2F/g, "/")
     )
+
     if (!searchUrl) return null
+
+    // Replace Kagi token only for Kagi bang
+    if (selectedBang?.t === "kg") {
+        searchUrl = searchUrl.replace("{{{kagi_token}}}", kagiToken)
+    }
 
     return searchUrl
 }

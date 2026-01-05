@@ -19,7 +19,7 @@ export const additionalBangs: Bang[] = [
         s: "Kagi Search",
         sc: "Search",
         t: "kg",
-        u: "https://kagi.com/search?q={{{s}}}"
+        u: "https://kagi.com/search?q={{{s}}}&token={{{kagi_token}}}"
     }
 ]
 
