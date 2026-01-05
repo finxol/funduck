@@ -1,6 +1,6 @@
 import defaultBangs from "./data/bang.json" with { type: "json" }
 
-type Bang = (typeof defaultBangs)[0]
+type Bang = (typeof defaultBangs)[number]
 
 export const additionalBangs: Bang[] = [
     {
