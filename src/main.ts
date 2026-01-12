@@ -1,5 +1,3 @@
-import { bangs } from "./bang"
-
 async function switchTheme() {
     const theme = await cookieStore.get("theme")
 
@@ -67,10 +65,16 @@ function noSearchDefaultPageRender() {
     })
 }
 
+/**
+ * Default bang to use, unless a kagi token is specified, then Kagi is used by default
+ */
 const LS_DEFAULT_BANG = localStorage.getItem("default-bang") ?? "brave"
-const defaultBang = bangs.find((b) => b.t === LS_DEFAULT_BANG)
 
-function getBangredirectUrl() {
+async function getBangredirectUrl() {
+    const { bangs } = await import("./bang")
+
+    const defaultBang = bangs.find((b) => b.t === LS_DEFAULT_BANG)
+
     const url = new URL(window.location.href)
     const query = url.searchParams.get("q")?.trim() ?? ""
     if (!query) {
@@ -119,8 +123,8 @@ function getBangredirectUrl() {
     return searchUrl
 }
 
-function doRedirect() {
-    const searchUrl = getBangredirectUrl()
+async function doRedirect() {
+    const searchUrl = await getBangredirectUrl()
     if (!searchUrl) return
     window.location.replace(searchUrl)
 }
