@@ -20,7 +20,16 @@ export const additionalBangs: Bang[] = [
         sc: "Search",
         t: "kg",
         u: "https://kagi.com/search?q={{{s}}}&token={{{kagi_token}}}"
-    }
+    },
+    {
+        "c": "Online Services",
+        "d": "search.brave.com",
+        "r": 2791,
+        "s": "Brave Search",
+        "sc": "Google",
+        "t": "b",
+        "u": "https://search.brave.com/search?q={{{s}}}"
+    },
 ]
 
 export const bangs: Bang[] = [...additionalBangs, ...defaultBangs]
