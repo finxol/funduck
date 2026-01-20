@@ -29,7 +29,7 @@ export const additionalBangs: Bang[] = [
         "sc": "Google",
         "t": "b",
         "u": "https://search.brave.com/search?q={{{s}}}"
-    },
+    }
 ]
 
 export const bangs: Bang[] = [...additionalBangs, ...defaultBangs]
