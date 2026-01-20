@@ -188,6 +188,15 @@ textarea {
     gap: 2.5rem;
 }
 
+/* Bottom content wrapper */
+.bottom-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    width: 100%;
+}
+
 /* Header section */
 .header {
     text-align: center;
@@ -358,4 +367,167 @@ footer {
 
 #app {
     background-color: var(--bg-color);
+}
+
+/* Browse bangs button */
+.browse-bangs-button {
+    margin-block-start: 1rem;
+    padding: 0.5rem 1rem;
+    border: 1px solid var(--input-border);
+    border-radius: 0.5rem;
+    background: var(--input-bg);
+    color: var(--text-color);
+    font-size: 0.875rem;
+    cursor: pointer;
+    transition: all 0.2s;
+
+    &:hover {
+        background: var(--button-hover);
+        border-color: var(--text-color);
+    }
+
+    &:active {
+        background: var(--button-active);
+    }
+}
+
+/* Bang search popover */
+#bang-search-popover {
+    position: fixed;
+    inset: 0;
+    margin: auto;
+    width: min(90vw, 32rem);
+    max-height: min(80vh, 600px);
+    padding: 1.5rem;
+    border: 1px solid var(--input-border);
+    border-radius: 0.75rem;
+    background: var(--bg-color);
+    color: var(--text-color);
+    flex-direction: column;
+    gap: 1rem;
+    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
+
+    &:popover-open {
+        display: flex;
+    }
+
+    &::backdrop {
+        background: rgba(0, 0, 0, 0.5);
+        backdrop-filter: blur(4px);
+    }
+
+    .popover-header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        h2 {
+            font-size: 1.25rem;
+            font-weight: 600;
+        }
+
+        .popover-close {
+            padding: 0.375rem;
+            border-radius: 0.375rem;
+            color: var(--link-color);
+            transition: all 0.15s;
+
+            &:hover {
+                background: var(--button-hover);
+                color: var(--text-color);
+            }
+        }
+    }
+
+    .bang-search-input {
+        padding: 0.75rem 1rem;
+        border: 1px solid var(--input-border);
+        border-radius: 0.5rem;
+        width: 100%;
+        background: var(--input-bg);
+        color: var(--input-text);
+        outline: none;
+        font-size: 1rem;
+        transition: border-color 0.2s;
+
+        &:focus {
+            border-color: var(--text-color);
+        }
+
+        &::placeholder {
+            color: var(--link-color);
+        }
+    }
+
+    .bang-search-results {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        flex: 1;
+        overflow-y: auto;
+        background: var(--input-bg);
+        border-radius: 0.5rem;
+        border: 1px solid var(--input-border);
+
+        &:empty {
+            display: none;
+        }
+
+        .bang-result {
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+            padding: 0.75rem 1rem;
+            border-bottom: 1px solid var(--input-border);
+            cursor: default;
+            transition: background-color 0.15s;
+
+            &:last-child {
+                border-bottom: none;
+            }
+
+            &:hover {
+                background: var(--button-hover);
+            }
+
+            .bang-trigger {
+                font-weight: 600;
+                color: var(--input-text);
+                font-family: monospace;
+                min-width: 4.5rem;
+                font-size: 0.9rem;
+            }
+
+            .bang-info {
+                display: flex;
+                flex-direction: column;
+                gap: 0.15rem;
+                flex: 1;
+                min-width: 0;
+
+                .bang-title {
+                    color: var(--input-text);
+                    font-size: 0.9rem;
+                    white-space: nowrap;
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                }
+
+                .bang-domain {
+                    color: var(--link-color);
+                    font-size: 0.75rem;
+                    white-space: nowrap;
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                }
+            }
+        }
+
+        .bang-no-results {
+            padding: 1.5rem;
+            text-align: center;
+            color: var(--link-color);
+            font-size: 0.9rem;
+        }
+    }
 }

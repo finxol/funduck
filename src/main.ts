@@ -33,6 +33,71 @@ async function checkTheme() {
     }
 }
 
+async function setupBangSearch() {
+    const { bangs } = await import("./bang")
+
+    const popover = document.querySelector<HTMLDivElement>(
+        "#bang-search-popover"
+    )!
+    const searchInput =
+        popover.querySelector<HTMLInputElement>(".bang-search-input")!
+    const resultsContainer = popover.querySelector<HTMLDivElement>(
+        ".bang-search-results"
+    )!
+
+    searchInput.addEventListener("input", () => {
+        const query = searchInput.value.trim().toLowerCase()
+
+        if (!query) {
+            resultsContainer.innerHTML = ""
+            return
+        }
+
+        const results = bangs
+            .filter(
+                (bang) =>
+                    bang.t.toLowerCase().includes(query) ||
+                    bang.s.toLowerCase().includes(query) ||
+                    bang.d.toLowerCase().includes(query)
+            )
+            .slice(0, 50)
+
+        if (results.length === 0) {
+            resultsContainer.innerHTML =
+                '<div class="bang-no-results">No bangs found</div>'
+            return
+        }
+
+        resultsContainer.innerHTML = results
+            .map(
+                (bang) => `
+            <div class="bang-result">
+                <span class="bang-trigger">!${bang.t}</span>
+                <div class="bang-info">
+                    <span class="bang-title">${escapeHtml(bang.s)}</span>
+                    <span class="bang-domain">${escapeHtml(bang.d)}</span>
+                </div>
+            </div>
+        `
+            )
+            .join("")
+    })
+
+    popover.addEventListener("toggle", (e) => {
+        if ((e as ToggleEvent).newState === "open") {
+            searchInput.value = ""
+            resultsContainer.innerHTML = ""
+            searchInput.focus()
+        }
+    })
+}
+
+function escapeHtml(text: string): string {
+    const div = document.createElement("div")
+    div.textContent = text
+    return div.innerHTML
+}
+
 function noSearchDefaultPageRender() {
     const app = document.querySelector<HTMLDivElement>("#app")!
     app.classList.remove("cloak")
@@ -63,6 +128,8 @@ function noSearchDefaultPageRender() {
         unsetThemeButton.classList.add("hide")
         checkTheme()
     })
+
+    void setupBangSearch()
 }
 
 /**
