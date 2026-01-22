@@ -22,31 +22,31 @@ export const additionalBangs: Bang[] = [
         u: "https://kagi.com/search?q={{{s}}}&token={{{kagi_token}}}"
     },
     {
-        "c": "Online Services",
-        "d": "search.brave.com",
-        "r": 2791,
-        "s": "Brave Search",
-        "sc": "Search",
-        "t": "b",
-        "u": "https://search.brave.com/search?q={{{s}}}"
+        c: "Online Services",
+        d: "search.brave.com",
+        r: 2791,
+        s: "Brave Search",
+        sc: "Search",
+        t: "b",
+        u: "https://search.brave.com/search?q={{{s}}}"
     },
     {
-        "c": "Online Services",
-        "d": "www.wordreference.com",
-        "r": 2791,
-        "s": "WordReference — en-fr",
-        "sc": "Translate",
-        "t": "enfr",
-        "u": "https://www.wordreference.com/enfr/{{{s}}}"
+        c: "Online Services",
+        d: "www.wordreference.com",
+        r: 2791,
+        s: "WordReference — en-fr",
+        sc: "Translate",
+        t: "enfr",
+        u: "https://www.wordreference.com/enfr/{{{s}}}"
     },
     {
-        "c": "Online Services",
-        "d": "www.wordreference.com",
-        "r": 2791,
-        "s": "WordReference — fr-en",
-        "sc": "Translate",
-        "t": "fren",
-        "u": "https://www.wordreference.com/fren/{{{s}}}"
+        c: "Online Services",
+        d: "www.wordreference.com",
+        r: 2791,
+        s: "WordReference — fr-en",
+        sc: "Translate",
+        t: "fren",
+        u: "https://www.wordreference.com/fren/{{{s}}}"
     }
 ]
 
