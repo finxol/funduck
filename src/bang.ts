@@ -49,14 +49,18 @@ export const additionalBangs: Bang[] = [
         u: "https://www.wordreference.com/fren/{{{s}}}"
     },
     {
-        "c": "Tech",
-        "d": "npmx.dev",
-        "r": 71,
-        "s": "NPMx",
-        "sc": "Languages (javascript)",
-        "t": "npm",
-        "u": "https://npmx.dev/search?q={{{s}}}"
-    },
+        c: "Tech",
+        d: "npmx.dev",
+        r: 71,
+        s: "NPMx",
+        sc: "Languages (javascript)",
+        t: "npm",
+        u: "https://npmx.dev/search?q={{{s}}}"
+    }
 ]
 
-export const bangs: Bang[] = [...additionalBangs, ...defaultBangs]
+const additionalBangTriggers = new Set(additionalBangs.map((b) => b.t))
+export const bangs: Bang[] = [
+    ...additionalBangs,
+    ...defaultBangs.filter((b) => !additionalBangTriggers.has(b.t))
+]
