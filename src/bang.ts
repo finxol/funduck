@@ -47,7 +47,16 @@ export const additionalBangs: Bang[] = [
         sc: "Translate",
         t: "fren",
         u: "https://www.wordreference.com/fren/{{{s}}}"
-    }
+    },
+    {
+        "c": "Tech",
+        "d": "npmx.dev",
+        "r": 71,
+        "s": "NPMx",
+        "sc": "Languages (javascript)",
+        "t": "npm",
+        "u": "https://npmx.dev/search?q={{{s}}}"
+    },
 ]
 
 export const bangs: Bang[] = [...additionalBangs, ...defaultBangs]
