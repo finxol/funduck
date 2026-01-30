@@ -9,7 +9,8 @@
         "harper-ls",
         "color-lsp",
         "json-language-server",
-        "package-version-server"
+        "package-version-server",
+        "biome"
     ],
     "languages": {
         "TypeScript": {

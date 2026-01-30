@@ -56,6 +56,15 @@ export const additionalBangs: Bang[] = [
         sc: "Languages (javascript)",
         t: "npm",
         u: "https://npmx.dev/search?q={{{s}}}"
+    },
+    {
+        c: "Tech",
+        d: "formulae.brew.sh",
+        r: 27,
+        s: "Homebrew",
+        sc: "Downloads (software)",
+        t: "brew",
+        u: "https://formulae.brew.sh/formula/{{{s}}}"
     }
 ]
 
