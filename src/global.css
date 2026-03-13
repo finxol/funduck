@@ -126,6 +126,12 @@ body {
     }
 }
 
+button svg {
+    width: 1.25rem;
+    height: 1.25rem;
+    color: var(--bg-color);
+}
+
 .search-icon {
     display: flex;
     align-items: center;
@@ -270,14 +276,6 @@ textarea {
             justify-content: center;
             flex-shrink: 0;
 
-            &:hover {
-                background: var(--button-hover);
-            }
-
-            &:active {
-                background: var(--button-active);
-            }
-
             img {
                 width: 20px;
                 height: 20px;
@@ -286,6 +284,14 @@ textarea {
 
             &.copied {
                 background: #28a745;
+            }
+
+            &:hover {
+                background: var(--button-hover);
+            }
+
+            &:active {
+                background: var(--button-active);
             }
         }
     }
@@ -325,16 +331,10 @@ form {
         border-radius: 0.5rem;
         transition: opacity 0.2s;
         flex-shrink: 0;
+    }
 
-        &:hover {
-            opacity: 0.85;
-        }
-
-        svg {
-            width: 1.25rem;
-            height: 1.25rem;
-            color: var(--bg-color);
-        }
+    button:hover {
+        opacity: 0.85;
     }
 }
 
@@ -358,10 +358,10 @@ footer {
         color: var(--link-color);
         text-decoration: none;
         font-weight: 500;
+    }
 
-        &:hover {
-            color: var(--link-hover);
-        }
+    a:hover {
+        color: var(--link-hover);
     }
 }
 
@@ -380,15 +380,15 @@ footer {
     font-size: 0.875rem;
     cursor: pointer;
     transition: all 0.2s;
+}
 
-    &:hover {
-        background: var(--button-hover);
-        border-color: var(--text-color);
-    }
+.browse-bangs-button:active {
+    background: var(--button-active);
+}
 
-    &:active {
-        background: var(--button-active);
-    }
+.browse-bangs-button:hover {
+    background: var(--button-hover);
+    border-color: var(--text-color);
 }
 
 /* Bang search popover */
