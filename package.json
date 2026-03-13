@@ -10,11 +10,11 @@
         "check:types": "tsgo --noEmit"
     },
     "devDependencies": {
-        "vite": "npm:vite@^8.0.0-beta.10",
-        "typescript": "npm:@typescript/native-preview@^7.0.0-dev.20260126.1"
+        "@biomejs/biome": "^2.4.6",
+        "typescript": "npm:@typescript/native-preview@^7.0.0-dev.20260313.1",
+        "vite": "^8.0.0"
     },
     "dependencies": {
-        "@biomejs/biome": "^2.3.11",
         "vite-plugin-pwa": "^1.2.0"
     }
 }
