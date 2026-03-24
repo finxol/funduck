@@ -74,6 +74,15 @@ export const additionalBangs: Bang[] = [
         sc: "Downloads (software)",
         t: "brew",
         u: "https://search.brave.com/search?q=site%3Aformulae.brew.sh%20{{{s}}}"
+    },
+    {
+        c: "Media",
+        d: "seerr.finxol.eu",
+        r: 7,
+        s: "Jellyseerr",
+        sc: "Specialty",
+        t: "Jellyseerr",
+        u: "https://seerr.finxol.eu/search?query={{{s}}}"
     }
 ]
 
