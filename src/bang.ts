@@ -81,7 +81,7 @@ export const additionalBangs: Bang[] = [
         r: 7,
         s: "Jellyseerr",
         sc: "Specialty",
-        t: "Jellyseerr",
+        t: "srr",
         u: "https://seerr.finxol.eu/search?query={{{s}}}"
     }
 ]
