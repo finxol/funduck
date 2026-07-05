@@ -83,6 +83,15 @@ export const additionalBangs: Bang[] = [
         sc: "Specialty",
         t: "srr",
         u: "https://seerr.finxol.eu/search?query={{{s}}}"
+    },
+    {
+        c: "Files",
+        d: "drive.google.com",
+        r: 7,
+        s: "Google Drive",
+        sc: "Specialty",
+        t: "gd",
+        u: "https://drive.google.com/drive/search?q={{{s}}}"
     }
 ]
 
