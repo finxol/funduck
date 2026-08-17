@@ -64,7 +64,7 @@ export const additionalBangs: Bang[] = [
         s: "npmx",
         sc: "Languages (javascript)",
         t: "npmx",
-        u: "https://npmx.dev/search?q={{{s}}}"
+        u: "https://npmx.dev/package/{{{s}}}"
     },
     {
         c: "Tech",
