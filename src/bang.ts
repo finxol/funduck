@@ -92,6 +92,15 @@ export const additionalBangs: Bang[] = [
         sc: "Specialty",
         t: "gd",
         u: "https://drive.google.com/drive/search?q={{{s}}}"
+    },
+    {
+        c: "Words",
+        d: "dictionnaire.lerobert.com",
+        r: 7,
+        s: "Le Robert Dictionnaire",
+        sc: "Specialty",
+        t: "def",
+        u: "https://dictionnaire.lerobert.com/definition/{{{s}}}"
     }
 ]
 
