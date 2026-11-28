@@ -3961,12 +3961,12 @@
     },
     {
         "c": "Tech",
-        "d": "www.archlinux.org",
+        "d": "archlinux.org",
         "r": 219,
         "s": "Arch Linux Packages",
         "sc": "Sysadmin (Arch)",
         "t": "alp",
-        "u": "https://www.archlinux.org/packages/?sort=&q={{{s}}}"
+        "u": "https://archlinux.org/packages/?sort=&q={{{s}}}"
     },
     {
         "c": "Online Services",
@@ -3993,7 +3993,7 @@
         "s": "alternativeTo",
         "sc": "Tools",
         "t": "alt",
-        "u": "http://alternativeto.net/SearchResult.aspx?search={{{s}}}"
+        "u": "https://alternativeto.net/browse/search/?q={{{s}}}"
     },
     {
         "c": "Shopping",
@@ -5838,12 +5838,12 @@
     },
     {
         "c": "Tech",
-        "d": "www.archlinux.org",
+        "d": "archlinux.org",
         "r": 303,
         "s": "Arch Package Search",
         "sc": "Sysadmin (Arch)",
         "t": "apkg",
-        "u": "https://www.archlinux.org/packages/?sort=&q={{{s}}}&maintainer=&flagged="
+        "u": "https://archlinux.org/packages/?sort=&q={{{s}}}&maintainer=&flagged="
     },
     {
         "c": "Tech",
@@ -6747,12 +6747,12 @@
     },
     {
         "c": "Tech",
-        "d": "www.archlinux.org",
+        "d": "archlinux.org",
         "r": 690,
         "s": "Arch Linux Packages",
         "sc": "Sysadmin (Arch)",
         "t": "archpkg",
-        "u": "https://www.archlinux.org/packages/?sort=&q={{{s}}}&maintainer=&flagged="
+        "u": "https://archlinux.org/packages/?sort=&q={{{s}}}&maintainer=&flagged="
     },
     {
         "c": "Tech",
@@ -7958,7 +7958,7 @@
         "s": "Arch Linux User Repository",
         "sc": "Downloads (software)",
         "t": "au",
-        "u": "https://aur.archlinux.org/packages/?K={{{s}}}"
+        "u": "https://aur.archlinux.org/packages?K={{{s}}}"
     },
     {
         "c": "Research",
@@ -8201,7 +8201,7 @@
         "s": "Arch User Repository",
         "sc": "Sysadmin (Arch)",
         "t": "aur",
-        "u": "https://aur.archlinux.org/packages/?K={{{s}}}"
+        "u": "https://aur.archlinux.org/packages?K={{{s}}}"
     },
     {
         "c": "Tech",
@@ -9263,7 +9263,7 @@
         "s": "Search all !bangs",
         "sc": "Search (DDG)",
         "t": "bangs",
-        "u": "https://duckduckgo.com/bang?q={{{s}}}"
+        "u": "https://duckduckgo.com/bangs?q={{{s}}}"
     },
     {
         "c": "News",
@@ -22717,7 +22717,7 @@
         "s": "DuckDuckGo",
         "sc": "Search",
         "t": "dax",
-        "u": "http://duckduckgo.com/?q={{{s}}}"
+        "u": "https://duckduckgo.com/?q={{{s}}}"
     },
     {
         "c": "Online Services",
@@ -23039,7 +23039,7 @@
         "r": 1512,
         "s": "dict.cc",
         "t": "dcc",
-        "u": "http://www.dict.cc/?s={{{s}}}"
+        "u": "https://www.dict.cc/?s={{{s}}}"
     },
     {
         "c": "Entertainment",
@@ -23291,7 +23291,7 @@
         "s": "DuckDuckGo",
         "sc": "Search (DDG)",
         "t": "ddg",
-        "u": "http://duckduckgo.com/?q={{{s}}}"
+        "u": "https://duckduckgo.com/?q={{{s}}}"
     },
     {
         "c": "Online Services",
@@ -24047,7 +24047,7 @@
         "s": "dict.cc free dictionary (de<>en)",
         "sc": "Tools",
         "t": "deen",
-        "u": "http://www.dict.cc/?s={{{s}}}"
+        "u": "https://www.dict.cc/?s={{{s}}}"
     },
     {
         "c": "Online Services",
@@ -24218,7 +24218,7 @@
         "s": "The Free Dictionary",
         "sc": "Reference (words)",
         "t": "define",
-        "u": "http://www.thefreedictionary.com/{{{s}}}"
+        "u": "https://www.thefreedictionary.com/{{{s}}}"
     },
     {
         "c": "Tech",
@@ -24245,7 +24245,7 @@
         "s": "The Free Dictionary",
         "sc": "Academic",
         "t": "def",
-        "u": "http://www.thefreedictionary.com/{{{s}}}"
+        "u": "https://www.thefreedictionary.com/{{{s}}}"
     },
     {
         "c": "Research",
@@ -25224,7 +25224,7 @@
         "s": "http://www.merriam-webster.com/",
         "sc": "Academic",
         "t": "dic",
-        "u": "http://www.merriam-webster.com/dictionary/{{{s}}}"
+        "u": "https://www.merriam-webster.com/dictionary/{{{s}}}"
     },
     {
         "c": "Research",
@@ -25341,7 +25341,7 @@
         "s": "dict.cc",
         "sc": "Academic",
         "t": "dict.cc",
-        "u": "http://www.dict.cc/?s={{{s}}}"
+        "u": "https://www.dict.cc/?s={{{s}}}"
     },
     {
         "c": "Research",
@@ -25377,7 +25377,7 @@
         "s": "The Free Dictionary",
         "sc": "Academic",
         "t": "dictionary",
-        "u": "http://www.thefreedictionary.com/{{{s}}}"
+        "u": "https://www.thefreedictionary.com/{{{s}}}"
     },
     {
         "c": "Online Services",
@@ -25840,12 +25840,12 @@
     },
     {
         "c": "Online Services",
-        "d": "discordapp.com",
+        "d": "discord.com",
         "r": 495,
         "s": "Discord Invite",
         "sc": "Social",
         "t": "discord",
-        "u": "https://discordapp.com/invite/{{{s}}}"
+        "u": "https://discord.com/invite/{{{s}}}"
     },
     {
         "c": "Shopping",
@@ -26182,12 +26182,12 @@
     },
     {
         "c": "Tech",
-        "d": "store.docker.com",
+        "d": "hub.docker.com",
         "r": 13,
         "s": "docker hub",
         "sc": "Sysadmin",
         "t": "dk",
-        "u": "https://store.docker.com/search?q={{{s}}}"
+        "u": "https://hub.docker.com/search?q={{{s}}}"
     },
     {
         "c": "Shopping",
@@ -26236,12 +26236,12 @@
     },
     {
         "c": "Tech",
-        "d": "store.docker.com",
+        "d": "hub.docker.com",
         "r": 0,
         "s": "Docker Store",
         "sc": "Sysadmin",
         "t": "dkstore",
-        "u": "https://store.docker.com/search?q={{{s}}}"
+        "u": "https://hub.docker.com/search?q={{{s}}}"
     },
     {
         "c": "Online Services",
@@ -26767,12 +26767,12 @@
     },
     {
         "c": "Tech",
-        "d": "store.docker.com",
+        "d": "hub.docker.com",
         "r": 520,
         "s": "Docker Store",
         "sc": "Sysadmin",
         "t": "docker",
-        "u": "https://store.docker.com/search?q={{{s}}}"
+        "u": "https://hub.docker.com/search?q={{{s}}}"
     },
     {
         "c": "Tech",
@@ -28410,7 +28410,7 @@
         "s": "The Free Dictionary",
         "sc": "Academic",
         "t": "d",
-        "u": "http://www.thefreedictionary.com/{{{s}}}"
+        "u": "https://www.thefreedictionary.com/{{{s}}}"
     },
     {
         "c": "Tech",
@@ -28545,7 +28545,7 @@
         "s": "DuckDuckGo",
         "sc": "Search (DDG)",
         "t": "?",
-        "u": "http://duckduckgo.com/?q={{{s}}}"
+        "u": "https://duckduckgo.com/?q={{{s}}}"
     },
     {
         "c": "Online Services",
@@ -28572,7 +28572,7 @@
         "s": "Duden",
         "sc": "Books",
         "t": "duden",
-        "u": "http://www.duden.de/suchen/dudenonline/{{{s}}}"
+        "u": "https://www.duden.de/suchen/dudenonline/{{{s}}}"
     },
     {
         "c": "Research",
@@ -29418,7 +29418,7 @@
         "s": "ebay.co.uk",
         "sc": "Online (marketplace)",
         "t": "ebayuk",
-        "u": "https://www.ebay.co.uk/sch/items/?_nkw={{{s}}}"
+        "u": "https://www.ebay.co.uk/sch/i.html?_nkw={{{s}}}"
     },
     {
         "c": "Shopping",
@@ -29751,7 +29751,7 @@
         "s": "ebay.co.uk",
         "sc": "Online (marketplace)",
         "t": "ebuk",
-        "u": "https://www.ebay.co.uk/sch/items/?_nkw={{{s}}}"
+        "u": "https://www.ebay.co.uk/sch/i.html?_nkw={{{s}}}"
     },
     {
         "c": "Shopping",
@@ -33288,7 +33288,7 @@
         "s": "ebay.co.uk",
         "sc": "Online (marketplace)",
         "t": "euk",
-        "u": "https://www.ebay.co.uk/sch/items/?_nkw={{{s}}}"
+        "u": "https://www.ebay.co.uk/sch/i.html?_nkw={{{s}}}"
     },
     {
         "c": "Shopping",
@@ -35493,7 +35493,7 @@
         "s": "Flickr",
         "sc": "Search",
         "t": "f",
-        "u": "http://www.flickr.com/search/?q={{{s}}}"
+        "u": "https://www.flickr.com/search/?q={{{s}}}"
     },
     {
         "c": "Multimedia",
@@ -39066,7 +39066,7 @@
         "s": "Google Australia",
         "sc": "Search (non-US)",
         "t": "ga",
-        "u": "http://www.google.com.au/search?q={{{s}}}"
+        "u": "https://www.google.com.au/search?q={{{s}}}"
     },
     {
         "c": "Research",
@@ -39550,7 +39550,7 @@
         "s": "Google AU",
         "sc": "Google",
         "t": "gau",
-        "u": "http://www.google.com.au/search?&source=hp&q={{{s}}}&meta=&aq=f&aqi=g10&aql=&oq=&gs_rfai="
+        "u": "https://www.google.com.au/search?&source=hp&q={{{s}}}&meta=&aq=f&aqi=g10&aql=&oq=&gs_rfai="
     },
     {
         "c": "Research",
@@ -39622,7 +39622,7 @@
         "s": "Google BE",
         "sc": "Google",
         "t": "gbe",
-        "u": "http://www.google.be/search?source=hp&q={{{s}}}&meta=&aq=f&aqi=g10&aql=&oq=&gs_rfai="
+        "u": "https://www.google.be/search?source=hp&q={{{s}}}&meta=&aq=f&aqi=g10&aql=&oq=&gs_rfai="
     },
     {
         "c": "Online Services",
@@ -39766,7 +39766,7 @@
         "s": "Google BR",
         "sc": "Google",
         "t": "gbr",
-        "u": "http://www.google.com.br/search?source=hp&q={{{s}}}&meta=&aq=f&aqi=g10&aql=&oq=&gs_rfai="
+        "u": "https://www.google.com.br/search?source=hp&q={{{s}}}&meta=&aq=f&aqi=g10&aql=&oq=&gs_rfai="
     },
     {
         "c": "Online Services",
@@ -39802,7 +39802,7 @@
         "s": "Google CA",
         "sc": "Google",
         "t": "gca",
-        "u": "http://www.google.ca/search?source=hp&q={{{s}}}&meta=&aq=f&aqi=g10&aql=&oq=&gs_rfai="
+        "u": "https://www.google.ca/search?source=hp&q={{{s}}}&meta=&aq=f&aqi=g10&aql=&oq=&gs_rfai="
     },
     {
         "c": "Online Services",
@@ -39901,7 +39901,7 @@
         "s": "Google CL",
         "sc": "Google",
         "t": "gcl",
-        "u": "http://www.google.cl/search?source=hp&q={{{s}}}&meta=&aq=f&aqi=g10&aql=&oq=&gs_rfai="
+        "u": "https://www.google.cl/search?source=hp&q={{{s}}}&meta=&aq=f&aqi=g10&aql=&oq=&gs_rfai="
     },
     {
         "c": "Research",
@@ -41332,7 +41332,7 @@
         "s": "Google HK",
         "sc": "Google",
         "t": "ghk",
-        "u": "http://www.google.com.hk/search?source=hp&q={{{s}}}&meta=&aq=f&aqi=g10&aql=&oq=&gs_rfai="
+        "u": "https://www.google.com.hk/search?source=hp&q={{{s}}}&meta=&aq=f&aqi=g10&aql=&oq=&gs_rfai="
     },
     {
         "c": "Online Services",
@@ -41714,12 +41714,12 @@
     },
     {
         "c": "Online Services",
-        "d": "google.com",
+        "d": "www.google.com",
         "r": 418,
         "s": "Google Images",
         "sc": "Google",
         "t": "gimages",
-        "u": "http://google.com/search?tbm=isch&q={{{s}}}&tbs=imgo:1"
+        "u": "https://www.google.com/search?q={{{s}}}&tbs=imgo:1&udm=2"
     },
     {
         "c": "Online Services",
@@ -41728,16 +41728,16 @@
         "s": "Google Images",
         "sc": "Google",
         "t": "gimg",
-        "u": "https://www.google.com/search?tbm=isch&q={{{s}}}&tbs=imgo:1"
+        "u": "https://www.google.com/search?q={{{s}}}&tbs=imgo:1&udm=2"
     },
     {
         "c": "Online Services",
-        "d": "google.com",
+        "d": "www.google.com",
         "r": 564,
         "s": "Google Images",
         "sc": "Google",
         "t": "gim",
-        "u": "https://google.com/search?tbm=isch&q={{{s}}}&tbs=imgo:1"
+        "u": "https://www.google.com/search?q={{{s}}}&tbs=imgo:1&udm=2"
     },
     {
         "c": "Online Services",
@@ -41800,7 +41800,7 @@
         "s": "Google Image Search",
         "sc": "Google",
         "t": "gis",
-        "u": "https://www.google.com/search?site=imghp&tbm=isch&q={{{s}}}"
+        "u": "https://www.google.com/search?site=imghp&q={{{s}}}&udm=2"
     },
     {
         "c": "Online Services",
@@ -41872,7 +41872,7 @@
         "s": "GitHub.com",
         "sc": "Downloads (code)",
         "t": "github",
-        "u": "http://github.com/search?q={{{s}}}&type=Everything&repo=&langOverride=&start_value=1"
+        "u": "https://github.com/search?q={{{s}}}&type=Everything&repo=&langOverride=&start_value=1"
     },
     {
         "c": "Tech",
@@ -42025,7 +42025,7 @@
         "s": "Google Japan",
         "sc": "Google",
         "t": "gj",
-        "u": "http://www.google.co.jp/search?q={{{s}}}"
+        "u": "https://www.google.co.jp/search?q={{{s}}}"
     },
     {
         "c": "Online Services",
@@ -42389,12 +42389,12 @@
     },
     {
         "c": "Online Services",
-        "d": "maps.google.com",
+        "d": "www.google.com",
         "r": 2362,
         "s": "Google Maps",
         "sc": "Google",
         "t": "gmap",
-        "u": "http://maps.google.com/maps?q={{{s}}}"
+        "u": "https://www.google.com/maps?q={{{s}}}"
     },
     {
         "c": "Online Services",
@@ -42808,7 +42808,7 @@
         "s": "Google NL",
         "sc": "Google",
         "t": "gnl",
-        "u": "http://www.google.nl/search?source=hp&q={{{s}}}&meta=&aq=f&aqi=g10&aql=&oq=&gs_rfai="
+        "u": "https://www.google.nl/search?source=hp&q={{{s}}}&meta=&aq=f&aqi=g10&aql=&oq=&gs_rfai="
     },
     {
         "c": "News",
@@ -43330,7 +43330,7 @@
         "s": "GoodReads",
         "sc": "Books",
         "t": "goodreads",
-        "u": "http://www.goodreads.com/search/search?search_type=books&search[query]={{{s}}}"
+        "u": "https://www.goodreads.com/search?q={{{s}}}"
     },
     {
         "c": "Multimedia",
@@ -43406,21 +43406,21 @@
     },
     {
         "c": "Online Services",
-        "d": "google.com",
+        "d": "www.google.com",
         "r": 130,
         "s": "Google Images",
         "sc": "Google",
         "t": "googleimages",
-        "u": "http://google.com/search?tbm=isch&q={{{s}}}&tbs=imgo:1"
+        "u": "https://www.google.com/search?q={{{s}}}&tbs=imgo:1&udm=2"
     },
     {
         "c": "Research",
-        "d": "google.com",
+        "d": "www.google.com",
         "r": 3,
         "s": "Google Image",
         "sc": "Reference",
         "t": "googleimg",
-        "u": "https://google.com/search?tbm=isch&q={{{s}}}&tbs=imgo:1"
+        "u": "https://www.google.com/search?q={{{s}}}&tbs=imgo:1&udm=2"
     },
     {
         "c": "Online Services",
@@ -43460,21 +43460,21 @@
     },
     {
         "c": "Online Services",
-        "d": "maps.google.com",
+        "d": "www.google.com",
         "r": 31,
         "s": "Google Maps",
         "sc": "Google",
         "t": "googlemap",
-        "u": "http://maps.google.com/maps?q={{{s}}}"
+        "u": "https://www.google.com/maps?q={{{s}}}"
     },
     {
         "c": "Online Services",
-        "d": "maps.google.com",
+        "d": "www.google.com",
         "r": 381,
         "s": "Google Maps",
         "sc": "Google",
         "t": "googlemaps",
-        "u": "http://maps.google.com/maps?q={{{s}}}"
+        "u": "https://www.google.com/maps?q={{{s}}}"
     },
     {
         "c": "Online Services",
@@ -44441,12 +44441,12 @@
     },
     {
         "c": "Online Services",
-        "d": "google.com",
+        "d": "www.google.com",
         "r": 612,
         "s": "Reddit Google search",
         "sc": "Search",
         "t": "greddit",
-        "u": "https://google.com/search?q=site%3Areddit.com+{{{s}}}"
+        "u": "https://www.google.com/search?q=site%3Areddit.com+{{{s}}}"
     },
     {
         "c": "Research",
@@ -47668,7 +47668,7 @@
         "s": "Google TW",
         "sc": "Google",
         "t": "gtw",
-        "u": "http://www.google.com.tw/search?source=hp&q={{{s}}}&meta=&aq=f&aqi=g10&aql=&oq=&gs_rfai="
+        "u": "https://www.google.com.tw/search?source=hp&q={{{s}}}&meta=&aq=f&aqi=g10&aql=&oq=&gs_rfai="
     },
     {
         "c": "Entertainment",
@@ -48172,7 +48172,7 @@
         "s": "Google Video",
         "sc": "Google",
         "t": "gv",
-        "u": "https://www.google.com/search?tbm=vid&q={{{s}}}"
+        "u": "https://www.google.com/search?q={{{s}}}&udm=7"
     },
     {
         "c": "Online Services",
@@ -50035,7 +50035,7 @@
         "s": "History",
         "sc": "Learning",
         "t": "history",
-        "u": "http://www.history.com/search?search-field={{{s}}}&x=0&y=0"
+        "u": "https://www.history.com/search?search-field={{{s}}}&x=0&y=0"
     },
     {
         "c": "Research",
@@ -50177,7 +50177,7 @@
         "s": "How Long to Beat",
         "sc": "Games (general)",
         "t": "hlb",
-        "u": "http://howlongtobeat.com/?q={{{s}}}"
+        "u": "https://howlongtobeat.com/?q={{{s}}}"
     },
     {
         "c": "News",
@@ -50231,7 +50231,7 @@
         "s": "How Long To Beat",
         "sc": "Games (general)",
         "t": "hltb",
-        "u": "http://howlongtobeat.com/?q={{{s}}}"
+        "u": "https://howlongtobeat.com/?q={{{s}}}"
     },
     {
         "c": "Entertainment",
@@ -56219,7 +56219,7 @@
         "s": "Jisho",
         "sc": "Tools",
         "t": "jisho",
-        "u": "http://jisho.org/search/{{{s}}}"
+        "u": "https://jisho.org/search/{{{s}}}"
     },
     {
         "c": "Online Services",
@@ -58766,7 +58766,7 @@
         "s": "Know Your Meme",
         "sc": "Reference (fun)",
         "t": "knowyourmeme",
-        "u": "http://knowyourmeme.com/search?utf8=%E2%9C%93&q={{{s}}}"
+        "u": "https://knowyourmeme.com/search?utf8=%E2%9C%93&q={{{s}}}"
     },
     {
         "c": "Shopping",
@@ -59720,7 +59720,7 @@
         "s": "Know Your Meme",
         "sc": "Reference (fun)",
         "t": "kym",
-        "u": "http://knowyourmeme.com/search?utf8=%E2%9C%93&q={{{s}}}"
+        "u": "https://knowyourmeme.com/search?utf8=%E2%9C%93&q={{{s}}}"
     },
     {
         "c": "Shopping",
@@ -66260,7 +66260,7 @@
         "s": "Metacritic",
         "sc": "Search",
         "t": "mc",
-        "u": "http://www.metacritic.com/search/all/{{{s}}}/results"
+        "u": "https://www.metacritic.com/search/all/{{{s}}}/results"
     },
     {
         "c": "Shopping",
@@ -67142,7 +67142,7 @@
         "s": "Know Your Meme",
         "sc": "Reference (fun)",
         "t": "meme",
-        "u": "http://knowyourmeme.com/search?utf8=%E2%9C%93&q={{{s}}}"
+        "u": "https://knowyourmeme.com/search?utf8=%E2%9C%93&q={{{s}}}"
     },
     {
         "c": "Online Services",
@@ -67383,7 +67383,7 @@
         "s": "Merriam-Webster",
         "sc": "Reference (words)",
         "t": "merriamwebster",
-        "u": "http://www.merriam-webster.com/dictionary/{{{s}}}"
+        "u": "https://www.merriam-webster.com/dictionary/{{{s}}}"
     },
     {
         "c": "Research",
@@ -67473,7 +67473,7 @@
         "s": "Metacritic",
         "sc": "Misc",
         "t": "metacritic",
-        "u": "http://www.metacritic.com/search/all/{{{s}}}/results"
+        "u": "https://www.metacritic.com/search/all/{{{s}}}/results"
     },
     {
         "c": "Online Services",
@@ -71359,7 +71359,7 @@
         "s": "Merriam-Webster Dictionary",
         "sc": "Reference (words)",
         "t": "mwd",
-        "u": "http://www.merriam-webster.com/dictionary/{{{s}}}"
+        "u": "https://www.merriam-webster.com/dictionary/{{{s}}}"
     },
     {
         "c": "Research",
@@ -71404,7 +71404,7 @@
         "s": "Merriam-Webster Dictionary",
         "sc": "Reference (words)",
         "t": "mw",
-        "u": "http://www.merriam-webster.com/dictionary/{{{s}}}"
+        "u": "https://www.merriam-webster.com/dictionary/{{{s}}}"
     },
     {
         "c": "Multimedia",
@@ -72311,7 +72311,7 @@
         "s": "Naver",
         "sc": "Search",
         "t": "naver",
-        "u": "http://search.naver.com/search.naver?where=nexearch&sm=osd&ie={inputEncoding}&query={{{s}}}"
+        "u": "https://search.naver.com/search.naver?where=nexearch&sm=osd&ie={inputEncoding}&query={{{s}}}"
     },
     {
         "c": "Online Services",
@@ -73724,7 +73724,7 @@
         "s": "Nico Nico Douga",
         "sc": "Video",
         "t": "nico",
-        "u": "http://www.nicovideo.jp/search/{{{s}}}"
+        "u": "https://www.nicovideo.jp/search/{{{s}}}"
     },
     {
         "c": "Entertainment",
@@ -73733,7 +73733,7 @@
         "s": "Niconico",
         "sc": "Misc",
         "t": "niconico",
-        "u": "http://www.nicovideo.jp/search/{{{s}}}"
+        "u": "https://www.nicovideo.jp/search/{{{s}}}"
     },
     {
         "c": "Tech",
@@ -79126,12 +79126,12 @@
     },
     {
         "c": "Tech",
-        "d": "www.archlinux.org",
+        "d": "archlinux.org",
         "r": 150,
         "s": "Arch Linux Package Database",
         "sc": "Sysadmin (Arch)",
         "t": "pac",
-        "u": "https://www.archlinux.org/packages/?sort=&q={{{s}}}&maintainer=&flagged="
+        "u": "https://archlinux.org/packages/?sort=&q={{{s}}}&maintainer=&flagged="
     },
     {
         "c": "Shopping",
@@ -79207,12 +79207,12 @@
     },
     {
         "c": "Tech",
-        "d": "www.archlinux.org",
+        "d": "archlinux.org",
         "r": 294,
         "s": "Arch Package Repo",
         "sc": "Sysadmin (Arch)",
         "t": "pacman",
-        "u": "https://www.archlinux.org/packages/?sort=&q={{{s}}}"
+        "u": "https://archlinux.org/packages/?sort=&q={{{s}}}"
     },
     {
         "c": "Entertainment",
@@ -81619,12 +81619,12 @@
     },
     {
         "c": "Online Services",
-        "d": "pinterest.com",
+        "d": "www.pinterest.com",
         "r": 486,
         "s": "Pinterest",
         "sc": "Social",
         "t": "pin",
-        "u": "http://pinterest.com/search/pins/?q={{{s}}}"
+        "u": "https://www.pinterest.com/search/pins/?q={{{s}}}"
     },
     {
         "c": "Entertainment",
@@ -81813,7 +81813,7 @@
         "s": "Pixiv",
         "sc": "Images",
         "t": "pixiv",
-        "u": "http://www.pixiv.net/search.php?word={{{s}}}"
+        "u": "https://www.pixiv.net/tags/{{{s}}}/artworks"
     },
     {
         "c": "Shopping",
@@ -81862,12 +81862,12 @@
     },
     {
         "c": "Tech",
-        "d": "www.archlinux.org",
+        "d": "archlinux.org",
         "r": 547,
         "s": "Arch Linux Packages",
         "sc": "Sysadmin (Arch)",
         "t": "pkg",
-        "u": "https://www.archlinux.org/packages/?sort=&q={{{s}}}"
+        "u": "https://archlinux.org/packages/?sort=&q={{{s}}}"
     },
     {
         "c": "Online Services",
@@ -90469,7 +90469,7 @@
         "s": "Rotten Tomatoes",
         "sc": "Video",
         "t": "rt",
-        "u": "https://www.rottentomatoes.com/search/?search={{{s}}}"
+        "u": "https://www.rottentomatoes.com/search?search={{{s}}}"
     },
     {
         "c": "News",
@@ -98873,7 +98873,7 @@
         "s": "Steam",
         "sc": "Games (general)",
         "t": "steam",
-        "u": "http://store.steampowered.com/search/?term={{{s}}}"
+        "u": "https://store.steampowered.com/search/?term={{{s}}}"
     },
     {
         "c": "Entertainment",
@@ -98972,7 +98972,7 @@
         "s": "Steam",
         "sc": "Games (general)",
         "t": "ste",
-        "u": "http://store.steampowered.com/search/?term={{{s}}}"
+        "u": "https://store.steampowered.com/search/?term={{{s}}}"
     },
     {
         "c": "Online Services",
@@ -102338,7 +102338,7 @@
         "s": "tenor",
         "sc": "Images",
         "t": "tenor",
-        "u": "https://tenor.com/search/{{{s}}}"
+        "u": "https://tenor.com/search/{{{s}}}-gifs"
     },
     {
         "c": "Tech",
@@ -102743,7 +102743,7 @@
         "s": "The Free Dictionary",
         "sc": "Reference (words)",
         "t": "tfd",
-        "u": "http://www.thefreedictionary.com/{{{s}}}"
+        "u": "https://www.thefreedictionary.com/{{{s}}}"
     },
     {
         "c": "Research",
@@ -103094,7 +103094,7 @@
         "s": "The Free Dictionary",
         "sc": "Search",
         "t": "thefreedictionary",
-        "u": "http://www.thefreedictionary.com/{{{s}}}"
+        "u": "https://www.thefreedictionary.com/{{{s}}}"
     },
     {
         "c": "Entertainment",
@@ -103337,7 +103337,7 @@
         "s": "Thesaurus",
         "sc": "Reference (words)",
         "t": "thes",
-        "u": "http://www.thesaurus.com/browse/{{{s}}}"
+        "u": "https://www.thesaurus.com/browse/{{{s}}}"
     },
     {
         "c": "Entertainment",
@@ -105623,7 +105623,7 @@
         "s": "Thesaurus at Reference.com",
         "sc": "Reference",
         "t": "tref",
-        "u": "http://www.thesaurus.com/browse/{{{s}}}"
+        "u": "https://www.thesaurus.com/browse/{{{s}}}"
     },
     {
         "c": "Online Services",
@@ -106172,7 +106172,7 @@
         "s": "Thesaurus.com",
         "sc": "Reference (words)",
         "t": "t",
-        "u": "http://www.thesaurus.com/browse/{{{s}}}"
+        "u": "https://www.thesaurus.com/browse/{{{s}}}"
     },
     {
         "c": "Shopping",
@@ -106959,12 +106959,12 @@
     },
     {
         "c": "Entertainment",
-        "d": "twitch.tv",
+        "d": "www.twitch.tv",
         "r": 6,
         "s": "Twitch Channel",
         "sc": "Games (general)",
         "t": "twitchc",
-        "u": "https://twitch.tv/{{{s}}}"
+        "u": "https://www.twitch.tv/{{{s}}}"
     },
     {
         "c": "Research",
@@ -106995,12 +106995,12 @@
     },
     {
         "c": "Entertainment",
-        "d": "twitch.tv",
+        "d": "www.twitch.tv",
         "r": 2516,
         "s": "Twitch.tv",
         "sc": "Games (general)",
         "t": "twitch",
-        "u": "https://twitch.tv/{{{s}}}"
+        "u": "https://www.twitch.tv/{{{s}}}"
     },
     {
         "c": "Online Services",
@@ -109039,7 +109039,7 @@
         "s": "Urban Dictionary",
         "sc": "Reference (fun)",
         "t": "urbandictionary",
-        "u": "http://www.urbandictionary.com/define.php?term={{{s}}}"
+        "u": "https://www.urbandictionary.com/define.php?term={{{s}}}"
     },
     {
         "c": "Entertainment",
@@ -109057,7 +109057,7 @@
         "s": "Urban Dictionary",
         "sc": "Reference (fun)",
         "t": "urban",
-        "u": "http://www.urbandictionary.com/define.php?term={{{s}}}"
+        "u": "https://www.urbandictionary.com/define.php?term={{{s}}}"
     },
     {
         "c": "Shopping",
@@ -109543,7 +109543,7 @@
         "s": "Urban Dictionary",
         "sc": "Learning",
         "t": "u",
-        "u": "http://www.urbandictionary.com/define.php?term={{{s}}}"
+        "u": "https://www.urbandictionary.com/define.php?term={{{s}}}"
     },
     {
         "c": "Tech",
@@ -113625,7 +113625,7 @@
         "s": "Wikipedia (ES)",
         "sc": "Academic",
         "t": "wes",
-        "u": "http://es.wikipedia.org/wiki/Special:Search?search={{{s}}}&go=Go"
+        "u": "https://es.wikipedia.org/wiki/Special:Search?search={{{s}}}&go=Go"
     },
     {
         "c": "Research",
@@ -113697,7 +113697,7 @@
         "s": "Wikipedia",
         "sc": "Reference",
         "t": "we",
-        "u": "http://en.wikipedia.org/wiki/{{{s}}}"
+        "u": "https://en.wikipedia.org/wiki/{{{s}}}"
     },
     {
         "c": "Research",
@@ -114633,7 +114633,7 @@
         "s": "Wikipedia",
         "sc": "Reference",
         "t": "wikide",
-        "u": "http://de.wikipedia.org/w/index.php?search={{{s}}} "
+        "u": "https://de.wikipedia.org/w/index.php?search={{{s}}}"
     },
     {
         "c": "Entertainment",
@@ -114831,7 +114831,7 @@
         "s": "Wikipedia Deutschland",
         "sc": "Tools",
         "t": "wikipediade",
-        "u": "http://de.wikipedia.org/w/index.php?search={{{s}}}"
+        "u": "https://de.wikipedia.org/w/index.php?search={{{s}}}"
     },
     {
         "c": "Research",
@@ -115263,7 +115263,7 @@
         "s": "Wiktionary",
         "sc": "Reference (words)",
         "t": "wikten",
-        "u": "http://en.wiktionary.org/wiki/Special:Search?search={{{s}}}&go=Define"
+        "u": "https://en.wiktionary.org/wiki/Special:Search?search={{{s}}}&go=Define"
     },
     {
         "c": "Research",
@@ -115317,7 +115317,7 @@
         "s": "Wiktionary",
         "sc": "Reference (words)",
         "t": "wiktionary",
-        "u": "http://en.wiktionary.org/wiki/Special:Search?search={{{s}}}&go=Define"
+        "u": "https://en.wiktionary.org/wiki/Special:Search?search={{{s}}}&go=Define"
     },
     {
         "c": "Research",
@@ -117099,7 +117099,7 @@
         "s": "Wikipedia (PL)",
         "sc": "Academic",
         "t": "wpl",
-        "u": "http://pl.wikipedia.org/wiki/Special:Search?search={{{s}}}&go=Go"
+        "u": "https://pl.wikipedia.org/wiki/Special:Search?search={{{s}}}&go=Go"
     },
     {
         "c": "News",
@@ -117450,7 +117450,7 @@
         "s": "WordReference (EN)",
         "sc": "Tools",
         "t": "wren",
-        "u": "http://www.wordreference.com/definition/{{{s}}}"
+        "u": "https://www.wordreference.com/definition/{{{s}}}"
     },
     {
         "c": "Research",
@@ -117675,7 +117675,7 @@
         "s": "WordReference (EN)",
         "sc": "Tools",
         "t": "wrn",
-        "u": "http://www.wordreference.com/definition/{{{s}}}"
+        "u": "https://www.wordreference.com/definition/{{{s}}}"
     },
     {
         "c": "Research",
@@ -117819,7 +117819,7 @@
         "s": "WordReference Definition",
         "sc": "Learning",
         "t": "wr",
-        "u": "http://www.wordreference.com/definition/{{{s}}}"
+        "u": "https://www.wordreference.com/definition/{{{s}}}"
     },
     {
         "c": "Research",
@@ -121846,12 +121846,12 @@
     },
     {
         "c": "Online Services",
-        "d": "google.com",
+        "d": "www.google.com",
         "r": 0,
         "s": "Google Ru",
         "sc": "Google",
         "t": "\u0433",
-        "u": "https://google.com/search?hl=ru&q={{{s}}}"
+        "u": "https://www.google.com/search?hl=ru&q={{{s}}}"
     },
     {
         "c": "Online Services",
